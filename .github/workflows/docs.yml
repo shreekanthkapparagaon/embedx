@@ -5,12 +5,18 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -20,5 +26,16 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs mkdocs-material
 
+      - name: Build site
+        run: mkdocs build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: site
+
       - name: Deploy
-        run: mkdocs gh-deploy --force
+        uses: actions/deploy-pages@v2
