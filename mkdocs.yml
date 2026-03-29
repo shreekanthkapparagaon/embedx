@@ -1,10 +1,11 @@
 site_name: EmbedX Docs
 site_description: Fast Embedded Development CLI
 site_author: Your Name
-site_url: https://your-username.github.io/embedx/
+site_url: https://shreekanthkapparagaon.github.io/embedx/
+use_directory_urls: true
 
 repo_name: embedx
-repo_url: https://github.com/your-username/embedx
+repo_url: https://github.com/shreekanthkapparagaon/embedx
 
 theme:
   name: material
@@ -57,7 +58,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-username/embedx
+      link: https://github.com/shreekanthkapparagaon/embedx
 
 nav:
   - Home: index.md
