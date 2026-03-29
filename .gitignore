@@ -1,0 +1,37 @@
+# 🔒 Virtual environments
+.venv/
+venv/
+env/
+
+# 🧠 Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 📦 Build files
+build/
+dist/
+*.egg-info/
+
+# 🧪 Test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# 🧾 Logs
+*.log
+
+# ⚙️ OS files
+.DS_Store
+Thumbs.db
+
+# 🧰 IDE files
+.vscode/
+.idea/
+
+# 🔑 Secrets
+.env
+
+# 🛠 Your tool specific
+embedx.json

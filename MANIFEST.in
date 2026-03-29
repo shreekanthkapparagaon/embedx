@@ -1,0 +1,3 @@
+prune .venv
+prune build
+prune dist

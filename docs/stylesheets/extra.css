@@ -1,0 +1,13 @@
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+.md-typeset .admonition {
+  border-radius: 8px;
+}
+
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}

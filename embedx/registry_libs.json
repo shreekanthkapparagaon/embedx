@@ -1,0 +1,76 @@
+{
+  "libraries": {
+    "arduinojson": {
+      "versions": {
+        "6.21.3": {
+          "type": "zip",
+          "url": "https://github.com/bblanchon/ArduinoJson/archive/refs/tags/v6.21.3.zip"
+        }
+      },
+      "description": "JSON parsing library"
+    },
+    "fastled": {
+      "versions": {
+        "3.6.0": {
+          "type": "zip",
+          "url": "https://github.com/FastLED/FastLED/archive/refs/tags/3.6.0.zip"
+        }
+      },
+      "description": "LED control library"
+    },
+    "wifi": {
+      "versions": {
+        "latest": {
+          "type": "zip",
+          "url": "https://github.com/espressif/arduino-esp32/archive/refs/heads/master.zip"
+        }
+      },
+      "description": "WiFi support for ESP32"
+    },
+    "dht": {
+      "versions": {
+        "1.4.4": {
+          "type": "zip",
+          "url": "https://github.com/adafruit/DHT-sensor-library/archive/refs/tags/1.4.4.zip"
+        }
+      },
+      "description": "DHT temperature sensor"
+    },
+    "servo": {
+      "versions": {
+        "1.1.8": {
+          "type": "zip",
+          "url": "https://github.com/arduino-libraries/Servo/archive/refs/tags/1.1.8.zip"
+        }
+      },
+      "description": "Servo motor control"
+    },
+    "sd": {
+      "versions": {
+        "1.2.4": {
+          "type": "zip",
+          "url": "https://github.com/arduino-libraries/SD/archive/refs/tags/1.2.4.zip"
+        }
+      },
+      "description": "SD card library"
+    },
+    "spi": {
+      "versions": {
+        "1.0": {
+          "type": "zip",
+          "url": "https://github.com/arduino/ArduinoCore-avr/archive/refs/heads/master.zip"
+        }
+      },
+      "description": "SPI communication"
+    },
+    "wire": {
+      "versions": {
+        "1.0": {
+          "type": "zip",
+          "url": "https://github.com/arduino/ArduinoCore-avr/archive/refs/heads/master.zip"
+        }
+      },
+      "description": "I2C communication"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embedx"
+version = "0.1.0"
+description = "Embedded development CLI tool"
+readme = "README.md"
+authors = [
+    { name = "Shreekant N K" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+    "questionary>=2.0",
+    "pyserial>=3.5"
+]
+
+[project.scripts]
+embedx = "embedx.cli:main"
+
+keywords = ["embedded", "esp32", "cli", "firmware", "arduino"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["embedx*"]
+exclude = [
+    "tests*",
+    ".venv*",
+    "__pycache__*",
+    "build*",
+    "dist*",
+    "*.egg-info*"
+]
+
+[tool.setuptools.package-data]
+embedx = ["*.json", "*.txt"]
+
+[tool.setuptools]
+zip-safe = false

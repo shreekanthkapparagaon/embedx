@@ -1,0 +1,70 @@
+site_name: EmbedX
+site_description: Fast Embedded Development CLI
+site_author: Your Name
+site_url: https://your-username.github.io/embedx/
+
+repo_name: embedx
+repo_url: https://github.com/your-username/embedx
+
+theme:
+  name: material
+
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+  font:
+    text: Inter
+    code: Fira Code
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/embedx
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Commands: commands.md
+  - Architecture: architecture.md
+  - Advanced: advanced.md
+
+extra_css:
+  - stylesheets/extra.css
